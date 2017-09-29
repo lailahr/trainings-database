@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
 	jQuery.ajax({
-		url: "data/trainings.json",
+		url: "https://tablefilter.herokuapp.com/spreadsheets/1vBtzF3JQ5zjoyNLs1asAKn0Dxy6WqUmSynxBRtlu988",
 	})
   .done(function(result) {
 
@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
 		for (var index = 0; index < result.length; index++) {
 			node = result[index];
 			table.row.add([
-				node.title,
+				'<a href="' + node.link + '" target="_blank">' + node.title + '</a>',
 				node.data_pipeline,
 				node.audience_level,
 				node.tags
