@@ -4,6 +4,9 @@ section {
 footer .footer-above {
 	 padding-top: 25px;
 }
+footer p {
+  font-size: 16px;
+}
 footer img {
   width:175px;
 }
@@ -95,6 +98,9 @@ footer img {
 table th {
   display: none;
 }
+tbody {
+  border-spacing: 0 0.5em;
+}
 td {
   display: table-row;
   font-size: 16px;
@@ -104,13 +110,8 @@ td.sorting_1 {
   font-weight: 600;
   color: #2C3E50;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #2C3E50 !important;
-  border: none;
-  background: transparent;
-}
-.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-  text-decoration: underline;
   border: none;
   background: transparent;
 }
@@ -131,11 +132,9 @@ label {
     float: left;
     display: none;
 }
-table.dataTable tbody tr {
-  padding-bottom:30px!important;
-}
-
 .dataTables_wrapper .dataTables_info {
   color: #2C3E50;
 }
+table.dataTable.no-footer {
+  border:none;
 }
